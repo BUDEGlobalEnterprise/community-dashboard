@@ -10,7 +10,7 @@ const ALUMNI_USERNAMES = new Set(alumniMembers.map(m => m.username.toLowerCase()
    CONFIG
 ------------------------------------------------------- */
 
-const ORG = "CircuitVerse";
+const ORG = "BUDEGlobalEnterprise";
 const GITHUB_API = "https://api.github.com";
 const TOKEN = process.env.GITHUB_TOKEN
 

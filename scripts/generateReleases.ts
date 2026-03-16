@@ -2,8 +2,7 @@ import fs from "fs";
 import path from "path";
 
 const REPOS = [
-  { name: "Mobile App", slug: "CircuitVerse/Mobile-App" },
-  { name: "Vue Simulator", slug: "CircuitVerse/cv-frontend-vue" },
+  { name: "Community Dashboard", slug: "BUDEGlobalEnterprise/community-dashboard" },
 ];
 
 const HEADERS = {

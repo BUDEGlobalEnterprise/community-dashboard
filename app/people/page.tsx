@@ -156,7 +156,7 @@ const filteredPeople = useMemo(() => {
           <span className="text-emerald-600 dark:text-emerald-400">People</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-4 mt-4">
-          Meet the team who made CircuitVerse possible.
+          Meet the team who made Bude Global Enterprise possible.
         </p>
         {updatedAt && (
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
@@ -263,14 +263,14 @@ const filteredPeople = useMemo(() => {
         <>
           <TeamSection
             title="Core Team"
-            description="The dedicated team members who lead and maintain CircuitVerse, ensuring the platform continues to evolve and serve the community."
+            description="The dedicated team members who lead and maintain Bude Global Enterprise, ensuring the platform continues to evolve and serve the community."
             members={coreTeam}
             teamType="core"
           />
 
           <TeamSection
             title="Alumni"
-            description="Former team members who have made significant contributions to CircuitVerse and helped shape it into what it is today."
+            description="Former team members who have made significant contributions to Bude Global Enterprise and helped shape it into what it is today."
             members={alumni}
             teamType="alumni"
           />
@@ -284,7 +284,7 @@ const filteredPeople = useMemo(() => {
     </div>
 
     <p className="text-lg text-muted-foreground max-w-3xl mb-6">
-      Amazing community members who contribute to CircuitVerse through
+      Amazing community members who contribute to Bude Global Enterprise through
       code, documentation, and more.
     </p>
   </div>

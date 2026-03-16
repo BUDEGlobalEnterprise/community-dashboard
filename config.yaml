@@ -4,45 +4,44 @@
 # 🏛️ Organization Info
 # -----------------------------------------------------------
 org:
-  name: CircuitVerse
-  description: CircuitVerse is an open-source platform that helps students and educators design, simulate, and share digital circuits online.
-  url: http://localhost:3000
-  logo_url: https://avatars.githubusercontent.com/u/42944450?s=280&v=4
-  start_date: 2018-01-01
+  name: Bude Global Enterprise
+  description: Bude Global Enterprise is a technology company focused on building high-impact enterprise solutions and fostering community-driven open-source projects.
+  url: https://www.budeglobal.in/
+  logo_url: https://www.budeglobal.in/images/optimized/budeglobal_logo-336w.webp
+  start_date: 2024-01-01
   socials:
-    github: https://github.com/CircuitVerse
-    email: support@circuitverse.org
+    github: https://github.com/BUDEGlobalEnterprise
+    email: budeglobalerp@gmail.com
 
 # -----------------------------------------------------------
 # 🌐 Site and SEO Metadata
 # -----------------------------------------------------------
 meta:
-  title: Leaderboard - CircuitVerse
-  description: CircuitVerse Leaderboard tracks weekly open-source contributions across the CircuitVerse organization.
+  title: Leaderboard - BUDE Global Enterprise
+  description: BUDE Global Enterprise Leaderboard tracks weekly open-source contributions across the BUDE Global Enterprise organization.
   image_url: https://avatars.githubusercontent.com/u/42944450?s=280&v=4
   site_url: http://localhost:3000
-  favicon_url: https://circuitverse.org/favicon.ico
+  favicon_url: https://www.budeglobal.in/images/optimized/budeglobal_logo-336w.webp
 
 # -----------------------------------------------------------
 # 🏆 Leaderboard related configurations
 # -----------------------------------------------------------
 leaderboard:
   # This can later be replaced by your own data source or GitHub scraper
-  data_source: https://github.com/CircuitVerse/leaderboard-data
-  # Optional custom theme CSS (you can leave it blank or remove it)
-  theme: https://raw.githubusercontent.com/CircuitVerse/leaderboard-data/refs/heads/main/leaderboard/theme.css
+  data_source: https://github.com/BUDEGlobalEnterprise/community-dashboard
+
 
   # --- Roles shown in leaderboard (keep structure exact) ---
   roles:
     core:
       name: Core
-      description: Core member of CircuitVerse
+      description: Core member of Bude Global Enterprise
     mentor:
       name: Mentor
-      description: CircuitVerse mentor or maintainer
+      description: Bude Global Enterprise mentor or maintainer
     contributor:
       name: Contributor
-      description: Open source contributor to CircuitVerse
+      description: Open source contributor to Bude Global Enterprise
     participant:
       name: Participant
       description: Participant in community or events
@@ -76,7 +75,7 @@ scraper:
   schedule: 0 */12 * * *
   scrapers:
     - name: GitHub Scraper
-      repository: CircuitVerse/leaderboard-github-scraper
+      repository: BUDEGlobalEnterprise/community-dashboard
       envs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_ORG: ${{ github.repository_owner }}

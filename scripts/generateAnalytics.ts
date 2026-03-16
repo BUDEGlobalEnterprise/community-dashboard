@@ -6,7 +6,7 @@ import { coreTeamMembers, alumniMembers } from "../lib/team-data";
    CONFIG
 ------------------------------------------------------- */
 
-const ORG = "CircuitVerse";
+const ORG = "BUDEGlobalEnterprise";
 const GITHUB_API = "https://api.github.com";
 const TOKEN = process.env.GITHUB_TOKEN;
 

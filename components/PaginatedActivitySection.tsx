@@ -148,7 +148,7 @@ export function PaginatedActivitySection({
     <div ref={containerRef} className="space-y-3 select-none">
       <div className="flex items-center justify-between px-1">
         <div className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-[#50B78B]" />
+          <span className="h-2 w-2 rounded-full bg-[#4169E1]" />
           <h3 className="text-xs uppercase tracking-wider text-zinc-500">
             {group.activity_name}
           </h3>
@@ -170,7 +170,7 @@ export function PaginatedActivitySection({
                 key={activity.slug}
                 className="group relative flex items-center gap-3 sm:gap-4 p-3 sm:p-4 hover:bg-zinc-50 dark:hover:bg-white/5 transition"
               >
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#50B78B] opacity-0 group-hover:opacity-100 transition" />
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#4169E1] opacity-0 group-hover:opacity-100 transition" />
 
                 <Avatar className="h-9 w-9 sm:h-10 sm:w-10 shrink-0">
                   <AvatarImage
@@ -212,7 +212,7 @@ export function PaginatedActivitySection({
                     <Link
                       href={activity.link ?? "#"}
                       target="_blank"
-                      className="opacity-0 group-hover:opacity-100 transition-opacity text-zinc-400 hover:text-[#50B78B] p-1 shrink-0"
+                      className="opacity-0 group-hover:opacity-100 transition-opacity text-zinc-400 hover:text-[#4169E1] p-1 shrink-0"
                     >
                       <ArrowUpRight className="h-4 w-4" />
                     </Link>
@@ -225,7 +225,7 @@ export function PaginatedActivitySection({
   href={`https://github.com/${activity.contributor}`}
   target="_blank"
   rel="noopener noreferrer"
-  className="text-zinc-700 dark:text-zinc-300 hover:text-[#50B78B] hover:underline transition-colors"
+  className="text-zinc-700 dark:text-zinc-300 hover:text-[#4169E1] hover:underline transition-colors"
 >
   {activity.contributor_name ?? activity.contributor}
 </Link>
@@ -239,7 +239,7 @@ export function PaginatedActivitySection({
 
                 {(activity.points ?? 0) > 0 && (
                   <div className="flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold bg-zinc-100 dark:bg-zinc-800">
-                    <Sparkles className="h-3 w-3 text-[#50B78B]" />
+                    <Sparkles className="h-3 w-3 text-[#4169E1]" />
                     {activity.points}
                   </div>
                 )}
@@ -258,7 +258,7 @@ export function PaginatedActivitySection({
                   size="sm"
                   onClick={goToPrevious}
                   disabled={currentPage === 1}
-                  className="h-8 px-2 sm:px-3 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#50B78B] transition-colors disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-inherit disabled:cursor-not-allowed cursor-pointer"
+                  className="h-8 px-2 sm:px-3 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#4169E1] transition-colors disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-inherit disabled:cursor-not-allowed cursor-pointer"
                 >
                   <ChevronLeft className="h-4 w-4" />
                   <span className="hidden sm:inline">Previous</span>
@@ -273,8 +273,8 @@ export function PaginatedActivitySection({
                       onClick={() => goToPage(pageNum)}
                       className={`h-8 w-8 p-0 cursor-pointer ${
                         currentPage === pageNum
-                          ? "bg-[#50B78B] text-white"
-                          : "hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#50B78B]"
+                          ? "bg-[#4169E1] text-white"
+                          : "hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#4169E1]"
                       }`}
                     >
                       {pageNum}
@@ -291,8 +291,8 @@ export function PaginatedActivitySection({
                         onClick={() => goToPage(page)}
                         className={`h-8 w-8 p-0 cursor-pointer ${
                           currentPage === page
-                            ? "bg-[#50B78B] text-white"
-                            : "hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#50B78B]"
+                            ? "bg-[#4169E1] text-white"
+                            : "hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#4169E1]"
                         }`}
                       >
                         {page}
@@ -315,7 +315,7 @@ export function PaginatedActivitySection({
                   size="sm"
                   onClick={goToNext}
                   disabled={currentPage === totalPages}
-                  className="h-8 px-2 sm:px-3 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#50B78B] transition-colors disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-inherit disabled:cursor-not-allowed cursor-pointer"
+                  className="h-8 px-2 sm:px-3 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-[#4169E1] transition-colors disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-inherit disabled:cursor-not-allowed cursor-pointer"
                 >
                   <span className="hidden sm:inline">Next</span>
                   <ChevronRight className="h-4 w-4" />

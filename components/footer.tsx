@@ -34,7 +34,7 @@ export const Footer = async ({ config }: FooterProps) => {
           <div className="col-span-2 col-start-1 md:col-span-4 lg:col-span-5 space-y-6">
             <div className="space-y-2">
               <Link
-                href="https://circuitverse.org/"
+                href="https://www.budeglobal.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-fit items-center gap-2"
@@ -53,103 +53,52 @@ export const Footer = async ({ config }: FooterProps) => {
             </div>
 
             <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-sm">
-              CircuitVerse is an open-source, educational
-              digital circuit simulator that lets users
-              design and simulate circuits through an
-              intuitive graphical interface
+              Bude Global Enterprise is a technology company
+              focused on building high-impact enterprise solutions
+              and fostering community-driven open-source projects.
             </p>
 
             <div className="flex items-center gap-2 sm:gap-4 pt-2 flex-wrap">
-              <Hint label="Facebook" side="bottom">
-                <Link
-                  href="https://www.facebook.com/CircuitVerse"
-                  target="_blank"
-                  className="text-zinc-400 hover:bg-zinc-100 group/yt dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
-                  aria-label="Facebook"
-                >
-                  <Image
-                    src="/facebook.svg"
-                    alt="Facebook"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 sm:w-5 sm:h-5"
-                  />
-                </Link>
-              </Hint>
+              {config.org.socials?.github && (
+                <Hint label="GitHub">
+                  <Link
+                    href={config.org.socials.github}
+                    target="_blank"
+                    className="text-zinc-400 group/gh hover:bg-zinc-100 dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
+                    aria-label="GitHub"
+                  >
+                    <Image
+                      src="/github.svg"
+                      alt="GitHub"
+                      width={20}
+                      height={20}
+                      className="w-5 h-5 sm:w-5 sm:h-5 dark:invert"
+                    />
+                  </Link>
+                </Hint>
+              )}
 
-              <Hint label="YouTube">
-                <Link
-                  href="https://www.youtube.com/@circuitverse4457"
-                  target="_blank"
-                  className="text-zinc-400 hover:bg-zinc-100 group/yt dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
-                  aria-label="YouTube"
-                >
-                  <Image
-                    src="/youtube.svg"
-                    alt="YouTube"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 sm:w-5 sm:h-5"
-                  />
-                </Link>
-              </Hint>
-
-              <Hint label="Twitter">
-                <Link
-                  href="https://x.com/CircuitVerse"
-                  target="_blank"
-                  className="text-zinc-400 hover:bg-zinc-100 group/yt dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
-                  aria-label="Twitter"
-                >
-                  <Image
-                    src="/twitter.svg"
-                    alt="Twitter"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 sm:w-5 sm:h-5 dark:invert"
-                  />
-                </Link>
-              </Hint>
-
-              <Hint label="LinkedIn">
-                <Link
-                  href="https://www.linkedin.com/company/circuitverse"
-                  target="_blank"
-                  className="text-zinc-400 group/li hover:bg-zinc-100 dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
-                  aria-label="LinkedIn"
-                >
-                  <Image
-                    src="/linkedIn.svg"
-                    alt="LinkedIn"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 sm:w-5 sm:h-5"
-                  />
-                </Link>
-              </Hint>
-
-              <Hint label="GitHub">
-                <Link
-                  href="https://github.com/CircuitVerse"
-                  target="_blank"
-                  className="text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
-                  aria-label="GitHub"
-                >
-                  <Image
-                    src="/github.svg"
-                    alt="GitHub"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 sm:w-5 sm:h-5 dark:invert"
-                  />
-                </Link>
-              </Hint>
-
-              <CopyEmailButton />
+              {config.org.socials?.email && (
+                <Hint label="Email">
+                  <Link
+                    href={`mailto:${config.org.socials.email}`}
+                    className="text-zinc-400 group/mail hover:bg-zinc-100 dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
+                    aria-label="Email"
+                  >
+                    <Image
+                      src="/mail.svg"
+                      alt="Email"
+                      width={20}
+                      height={20}
+                      className="w-5 h-5 sm:w-5 sm:h-5 dark:invert"
+                    />
+                  </Link>
+                </Hint>
+              )}
 
               <Hint label="Slack">
                 <Link
-                  href="https://circuitverse-team.slack.com/ssb/redirect"
+                  href="https://budeglobal.slack.com/"
                   target="_blank"
                   className="text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 p-2 sm:p-2 rounded-full transition-all duration-200"
                   aria-label="Slack"
@@ -174,9 +123,9 @@ export const Footer = async ({ config }: FooterProps) => {
               <li>
                 <Link
                   href="/"
-                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#50B78B] transition-colors"
+                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#4169E1] transition-colors"
                 >
-                  <span className="text-zinc-400 group-hover:text-[#50B78B] transition-colors">
+                  <span className="text-zinc-400 group-hover:text-[#4169E1] transition-colors">
                     <HomeIcon className="h-4 w-4" />
                   </span>
                   Home
@@ -187,9 +136,9 @@ export const Footer = async ({ config }: FooterProps) => {
               <li>
                 <Link
                   href="/leaderboard"
-                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#50B78B] transition-colors"
+                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#4169E1] transition-colors"
                 >
-                  <span className="text-zinc-400 group-hover:text-[#50B78B] transition-colors">
+                  <span className="text-zinc-400 group-hover:text-[#4169E1] transition-colors">
                     <Trophy className="h-4 w-4" />
                   </span>
                   Leaderboard
@@ -200,9 +149,9 @@ export const Footer = async ({ config }: FooterProps) => {
               <li>
                 <Link
                   href="/people"
-                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#50B78B] transition-colors"
+                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#4169E1] transition-colors"
                 >
-                  <span className="text-zinc-400 group-hover:text-[#50B78B] transition-colors">
+                  <span className="text-zinc-400 group-hover:text-[#4169E1] transition-colors">
                     <Users className="h-4 w-4" />
                   </span>
                   People
@@ -213,9 +162,9 @@ export const Footer = async ({ config }: FooterProps) => {
               <li>
                 <Link
                   href="/analytics"
-                  className="group flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#50B78B] transition-colors"
+                  className="group flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#4169E1] transition-colors"
                 >
-                  <span className="text-zinc-400 group-hover:text-[#50B78B] transition-colors">
+                  <span className="text-zinc-400 group-hover:text-[#4169E1] transition-colors">
                     <BarChart3 className="h-4 w-4" />
                   </span>
                   Analytics
@@ -226,9 +175,9 @@ export const Footer = async ({ config }: FooterProps) => {
               <li>
                 <Link
                   href="/releases"
-                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#50B78B] transition-colors"
+                  className="group inline-flex w-fit items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#4169E1] transition-colors"
                 >
-                  <span className="text-zinc-400 group-hover:text-[#50B78B] transition-colors">
+                  <span className="text-zinc-400 group-hover:text-[#4169E1] transition-colors">
                     <Tag className="h-4 w-4" />
                   </span>
                   Releases
@@ -245,8 +194,8 @@ export const Footer = async ({ config }: FooterProps) => {
             <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4 space-y-3">
               <div className="flex items-start gap-3">
                 <span className="relative flex h-2 w-2 mt-1.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#50B78B] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#50B78B]"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4169E1] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4169E1]"></span>
                 </span>
                 <div className="space-y-1">
                   <p className="text-xs font-medium text-zinc-900 dark:text-zinc-200">
@@ -276,7 +225,7 @@ export const Footer = async ({ config }: FooterProps) => {
             <div className="mt-6">
               <Link
                 href="/leaderboard"
-                className="text-xs font-medium text-[#50B78B] flex items-center gap-1 hover:underline"
+                className="text-xs font-medium text-[#4169E1] flex items-center gap-1 hover:underline"
               >
                 View full stats{" "}
                 <ArrowRight className="h-3 w-3" />
@@ -292,10 +241,10 @@ export const Footer = async ({ config }: FooterProps) => {
           </p>
 
           <div className="flex items-center gap-6 text-sm text-zinc-500 dark:text-zinc-400">
-            <Link href="https://circuitverse.org/privacy">
+            <Link href="https://www.budeglobal.in/privacy">
               Privacy Policy
             </Link>
-            <Link href="https://circuitverse.org/tos">
+            <Link href="https://www.budeglobal.in/tos">
               Terms of Service
             </Link>
           </div>

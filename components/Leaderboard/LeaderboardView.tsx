@@ -86,9 +86,9 @@ const activityStyles: Record<string, {
   },
   "Issue closed": {
     icon: CheckCircle,
-    bgColor: "bg-green-500/10 dark:bg-green-500/15",
-    textColor: "text-green-700 dark:text-green-400",
-    borderColor: "border-l-green-500"
+    bgColor: "bg-blue-500/10 dark:bg-blue-500/15",
+    textColor: "text-blue-700 dark:text-blue-400",
+    borderColor: "border-l-blue-500"
   },
   "Issue labeled": {
     icon: Tag,
@@ -98,9 +98,9 @@ const activityStyles: Record<string, {
   },
   "Review submitted": {
     icon: Eye,
-    bgColor: "bg-teal-500/10 dark:bg-teal-500/15",
-    textColor: "text-teal-700 dark:text-teal-400",
-    borderColor: "border-l-teal-500"
+    bgColor: "bg-sky-500/10 dark:bg-sky-500/15",
+    textColor: "text-sky-700 dark:text-sky-400",
+    borderColor: "border-l-sky-500"
   }
 };
 
@@ -563,7 +563,7 @@ export default function LeaderboardView({
           <div className="mb-8">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between mb-4">
               <div className="min-w-0">
-                <h1 className="text-4xl text-[#50B78B] font-bold mb-2">
+                <h1 className="text-4xl text-[#4169E1] font-bold mb-2">
                   {periodLabels[period]} Leaderboard
                 </h1>
                 <p className="text-muted-foreground">
@@ -590,7 +590,7 @@ export default function LeaderboardView({
                     placeholder="Search contributors..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-9 h-9 w-full bg-white dark:bg-[#07170f] border border-[#50B78B]/60 dark:border-[#50B78B]/40 focus-visible:ring-2 focus-visible:ring-[#50B78B]"
+                    className="pl-9 h-9 w-full bg-white dark:bg-[#0a0e1a] border border-[#4169E1]/60 dark:border-[#4169E1]/40 focus-visible:ring-2 focus-visible:ring-[#4169E1]"
                   />
                 </div>
 
@@ -606,8 +606,8 @@ export default function LeaderboardView({
                         className={cn(
                           "h-8 px-3",
                           viewMode === "list"
-                            ? "bg-[#50B78B] hover:bg-[#50B78B]/90 text-white"
-                            : "hover:bg-[#50B78B]/10 text-muted-foreground"
+                            ? "bg-[#4169E1] hover:bg-[#4169E1]/90 text-white"
+                            : "hover:bg-[#4169E1]/10 text-muted-foreground"
                         )}
                       >
                         <List className="h-4 w-4" />
@@ -619,8 +619,8 @@ export default function LeaderboardView({
                         className={cn(
                           "h-8 px-3",
                           viewMode === "grid"
-                            ? "bg-[#50B78B] hover:bg-[#50B78B]/90 text-white"
-                            : "hover:bg-[#50B78B]/10 text-muted-foreground"
+                            ? "bg-[#4169E1] hover:bg-[#4169E1]/90 text-white"
+                            : "hover:bg-[#4169E1]/10 text-muted-foreground"
                         )}
                       >
                         <Grid3X3 className="h-4 w-4" />
@@ -630,7 +630,7 @@ export default function LeaderboardView({
                     <div className="hidden md:flex">
                       <button
                         type="button"
-                        className="h-9 w-28 px-3 rounded-md bg-[#50B78B] text-white text-sm flex items-center justify-center gap-2"
+                        className="h-9 w-28 px-3 rounded-md bg-[#4169E1] text-white text-sm flex items-center justify-center gap-2"
                       >
                         <span>
                           {sortBy === "points"
@@ -657,7 +657,7 @@ export default function LeaderboardView({
                         variant="ghost"
                         size="sm"
                         onClick={clearFilters}
-                        className="h-9 hover:bg-[#50B78B]/20 cursor-pointer"
+                        className="h-9 hover:bg-[#4169E1]/20 cursor-pointer"
                       >
                         <X className="h-4 w-4 mr-1" />
                         Clear
@@ -669,12 +669,12 @@ export default function LeaderboardView({
                         <Button
                           variant="outline"
                           size="sm"
-                          className="h-9 border border-[#50B78B]/30 hover:bg-[#50B78B]/20 cursor-pointer"
+                          className="h-9 border border-[#4169E1]/30 hover:bg-[#4169E1]/20 cursor-pointer"
                         >
                           <Filter className="h-4 w-4 mr-1.5" />
                           Filter
                           {selectedRoles.size > 0 && (
-                            <span className="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-[#50B78B] text-white">
+                            <span className="ml-1 px-1.5 py-0.5 text-xs rounded-full bg-[#4169E1] text-white">
                               {selectedRoles.size}
                             </span>
                           )}
@@ -682,7 +682,7 @@ export default function LeaderboardView({
                       </PopoverTrigger>
                       <PopoverContent
                         align="end"
-                        className="w-64 bg-white dark:bg-[#07170f] border-[#50B78B]/20"
+                        className="w-64 bg-white dark:bg-[#0a0e1a] border-[#4169E1]/20"
                       >
                         <div className="space-y-4">
                           {/* Sort By Section */}
@@ -723,8 +723,8 @@ export default function LeaderboardView({
                                     className={cn(
                                       'w-full text-left px-3 py-2 cursor-pointer rounded-md text-sm font-medium transition-all',
                                       active
-                                        ? 'bg-[#50B78B] text-white shadow-sm'
-                                        : 'hover:bg-[#50B78B]/10 text-foreground'
+                                        ? 'bg-[#4169E1] text-white shadow-sm'
+                                        : 'hover:bg-[#4169E1]/10 text-foreground'
                                     )}
                                     aria-pressed={active}
                                   >
@@ -751,7 +751,7 @@ export default function LeaderboardView({
                                   className={cn(
                                     "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer transition-all duration-200 group",
                                     selectedRoles.has(role)
-                                      ? "bg-[#50B78B]/10 border border-[#50B78B]/30 shadow-sm"
+                                      ? "bg-[#4169E1]/10 border border-[#4169E1]/30 shadow-sm"
                                       : "bg-muted/30 hover:bg-muted/60 border border-transparent"
                                   )}
                                 >
@@ -760,15 +760,15 @@ export default function LeaderboardView({
                                     checked={selectedRoles.has(role)}
                                     onCheckedChange={() => toggleRole(role)}
                                     className={cn(
-                                      "data-[state=checked]:bg-[#50B78B] data-[state=checked]:border-[#50B78B] border-2",
+                                      "data-[state=checked]:bg-[#4169E1] data-[state=checked]:border-[#4169E1] border-2",
                                       "transition-all duration-200"
                                     )}
                                   />
                                   <span className={cn(
                                     "text-sm font-medium flex-1 transition-colors",
                                     selectedRoles.has(role)
-                                      ? "text-[#50B78B]"
-                                      : "text-foreground group-hover:text-[#50B78B]"
+                                      ? "text-[#4169E1]"
+                                      : "text-foreground group-hover:text-[#4169E1]"
                                   )}>
                                     {role}
                                   </span>
@@ -797,10 +797,10 @@ export default function LeaderboardView({
                     onClick={() => handlePeriodChange(p)}
                     disabled={isLoading || isActive}
                     className={cn(
-                      "px-4 py-2 font-medium transition-colors border-b-2 relative outline-none focus-visible:ring-2 focus-visible:ring-[#50B78B]/60 rounded-sm flex items-center gap-2",
+                      "px-4 py-2 font-medium transition-colors border-b-2 relative outline-none focus-visible:ring-2 focus-visible:ring-[#4169E1]/60 rounded-sm flex items-center gap-2",
                       isActive
-                        ? "border-[#50B78B] text-[#50B78B] bg-linear-to-t from-[#50B78B]/12 to-transparent dark:from-[#50B78B]/12"
-                        : "border-transparent text-muted-foreground hover:text-[#50B78B] cursor-pointer",
+                        ? "border-[#4169E1] text-[#4169E1] bg-linear-to-t from-[#4169E1]/12 to-transparent dark:from-[#4169E1]/12"
+                        : "border-transparent text-muted-foreground hover:text-[#4169E1] cursor-pointer",
                       isLoading && "opacity-70"
                     )}
                   >
@@ -831,7 +831,7 @@ export default function LeaderboardView({
                 <SelectTrigger
                   id="page-size-select"
                   size="sm"
-                  className="h-9 w-24 border border-[#50B78B]/30 hover:bg-[#50B78B]/20 focus-visible:ring-2 focus-visible:ring-[#50B78B]"
+                  className="h-9 w-24 border border-[#4169E1]/30 hover:bg-[#4169E1]/20 focus-visible:ring-2 focus-visible:ring-[#4169E1]"
                   aria-label="Select number of entries per page"
                 >
                   <SelectValue placeholder="All" />
@@ -856,9 +856,9 @@ export default function LeaderboardView({
             <Card>
               <CardContent className="py-16 text-center">
                 <div className="relative mx-auto w-20 h-20 mb-6">
-                  <div className="absolute inset-0 rounded-full bg-[#50B78B]/10 dark:bg-[#50B78B]/15" />
-                  <div className="absolute inset-2 rounded-full bg-[#50B78B]/5 dark:bg-[#50B78B]/10 flex items-center justify-center">
-                    <SearchX className="h-8 w-8 text-[#50B78B]/70" />
+                  <div className="absolute inset-0 rounded-full bg-[#4169E1]/10 dark:bg-[#4169E1]/15" />
+                  <div className="absolute inset-2 rounded-full bg-[#4169E1]/5 dark:bg-[#4169E1]/10 flex items-center justify-center">
+                    <SearchX className="h-8 w-8 text-[#4169E1]/70" />
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-2">No results found</h3>
@@ -873,7 +873,7 @@ export default function LeaderboardView({
                   <Button
                     variant="outline"
                     onClick={clearFilters}
-                    className="border-[#50B78B]/30 hover:bg-[#50B78B]/20 hover:text-[#50B78B]"
+                    className="border-[#4169E1]/30 hover:bg-[#4169E1]/20 hover:text-[#4169E1]"
                   >
                     <X className="h-4 w-4 mr-2" />
                     Clear Filters
@@ -913,7 +913,7 @@ export default function LeaderboardView({
                 size="sm"
                 onClick={goToPreviousPage}
                 disabled={currentPage === 1}
-                className="h-9 border border-[#50B78B]/30 hover:bg-[#50B78B]/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="h-9 border border-[#4169E1]/30 hover:bg-[#4169E1]/20 disabled:opacity-50 disabled:cursor-not-allowed"
                 aria-label="Go to previous page"
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -975,8 +975,8 @@ export default function LeaderboardView({
                         className={cn(
                           "h-9 w-9 p-0",
                           currentPage === pageNum
-                            ? "bg-[#50B78B] text-white hover:bg-[#50B78B]/90"
-                            : "hover:bg-[#50B78B]/20 hover:text-[#50B78B]"
+                            ? "bg-[#4169E1] text-white hover:bg-[#4169E1]/90"
+                            : "hover:bg-[#4169E1]/20 hover:text-[#4169E1]"
                         )}
                         aria-label={`Go to page ${pageNum}`}
                         aria-current={currentPage === pageNum ? "page" : undefined}
@@ -993,7 +993,7 @@ export default function LeaderboardView({
                 size="sm"
                 onClick={goToNextPage}
                 disabled={currentPage === totalPages}
-                className="h-9 border border-[#50B78B]/30 hover:bg-[#50B78B]/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="h-9 border border-[#4169E1]/30 hover:bg-[#4169E1]/20 disabled:opacity-50 disabled:cursor-not-allowed"
                 aria-label="Go to next page"
               >
                 <ChevronRight className="h-4 w-4" />
@@ -1034,13 +1034,13 @@ export default function LeaderboardView({
                               >
                                 <div className="flex items-center justify-center w-5 h-5 shrink-0">
                                   {index === 0 && (
-                                    <Trophy className="h-4 w-4 text-[#50B78B]" />
+                                    <Trophy className="h-4 w-4 text-[#4169E1]" />
                                   )}
                                   {index === 1 && (
                                     <Medal className="h-4 w-4 text-zinc-400" />
                                   )}
                                   {index === 2 && (
-                                    <Medal className="h-4 w-4 text-[#50B78B]/70" />
+                                    <Medal className="h-4 w-4 text-[#4169E1]/70" />
                                   )}
                                 </div>
                                 <Avatar className="h-9 w-9 shrink-0 border">
@@ -1055,7 +1055,7 @@ export default function LeaderboardView({
                                   </AvatarFallback>
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
-                                  <p className="text-sm font-medium truncate group-hover:text-[#50B78B] transition-colors leading-tight">
+                                  <p className="text-sm font-medium truncate group-hover:text-[#4169E1] transition-colors leading-tight">
                                     {contributor.name || contributor.username}
                                   </p>
                                   <div className="flex items-center gap-2 mt-0.5 text-xs text-muted-foreground">

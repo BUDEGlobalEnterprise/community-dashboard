@@ -8,11 +8,11 @@ export default async function ReleasesPage() {
     // MERGED: Added 'w-full' from main, kept 'pb-32' and 'space-y-6' from your fix
     <div className="mx-auto w-full max-w-5xl px-4 pt-10 pb-32 space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-[#50B78B]">
+        <h1 className="text-3xl font-bold text-[#4169E1]">
           Releases
         </h1>
         <p className="text-sm text-zinc-500 mt-1">
-          Celebrating contributors across CircuitVerse releases
+          Celebrating contributors across Bude Global Enterprise releases
         </p>
       </div>
 

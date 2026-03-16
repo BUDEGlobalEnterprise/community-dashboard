@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import Hint from "./hint";
 
-const EMAIL = "support@circuitverse.org";
+const EMAIL = "budeglobalerp@gmail.com";
 const COPIED_TOOLTIP_DURATION = 1500;
 export default function CopyEmailButton() {
   const [copied, setCopied] = useState(false);

@@ -1,8 +1,8 @@
 # GitHub Activity Leaderboard
 
-![Build Status](https://github.com/CircuitVerse/community-dashboard/actions/workflows/leaderboard.yml/badge.svg)
-![License](https://img.shields.io/github/license/CircuitVerse/community-dashboard)
-![Contributors](https://img.shields.io/github/contributors/CircuitVerse/community-dashboard)
+![Build Status](https://github.com/BUDEGlobalEnterprise/community-dashboard/actions/workflows/leaderboard.yml/badge.svg)
+![License](https://img.shields.io/github/license/BUDEGlobalEnterprise/community-dashboard)
+![Contributors](https://img.shields.io/github/contributors/BUDEGlobalEnterprise/community-dashboard)
 
 ---
 
@@ -46,14 +46,14 @@
 ## 🔗 Quick Links
 
 - 🌐 [Live Demo](https://cv-community-dashboard.netlify.app/)
-- 🐛 [Report Bug](https://github.com/CircuitVerse/community-dashboard/issues/new)
-- 💡 [Request Feature](https://github.com/CircuitVerse/community-dashboard/issues/new)
+- 🐛 [Report Bug](https://github.com/BUDEGlobalEnterprise/community-dashboard/issues/new)
+- 💡 [Request Feature](https://github.com/BUDEGlobalEnterprise/community-dashboard/issues/new)
 
 ---
 
 ## 🏁 Overview
 
-This project powers the **CircuitVerse Leaderboard**, which ranks contributors based on their GitHub activity such as:
+This project powers the **Bude Global Enterprise Leaderboard**, which ranks contributors based on their GitHub activity such as:
 
 - Pull Requests opened
 - Pull Requests merged
@@ -242,4 +242,4 @@ npx tsx scripts/generateLeaderboard.ts
 
 ## Demo Site
 
-[https://cv-community-dashboard.netlify.app/](https://cv-community-dashboard.netlify.app/)
+[https://budeglobal.in/](https://budeglobal.in/)

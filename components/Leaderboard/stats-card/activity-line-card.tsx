@@ -56,7 +56,7 @@ const CustomPeakLabel = ({
   y,
   index,
   chartData,
-  color = "#50B78B",
+  color = "#4169E1",
 }: CustomPeakLabelProps) => {
   if (
     x == null ||
@@ -115,7 +115,7 @@ const CustomPeakLabel = ({
 const chartConfig = {
   value: {
     label: "Activities",
-    color: "#50B78B",
+    color: "#4169E1",
   },
 } satisfies ChartConfig;
 
@@ -181,15 +181,15 @@ export function ActivityLineCard({
   }
 
   return (
-    <Card className="rounded-[20px] border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900/40 shadow-xl shadow-[#edfff7] dark:shadow-black/50 overflow-hidden">
+    <Card className="rounded-[20px] border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900/40 shadow-xl shadow-[#f0f4ff] dark:shadow-black/50 overflow-hidden">
       <CardHeader className="pb-0">
         <div className="flex items-start justify-between">
           <div>
             <CardTitle className="text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-[#50B78B] shadow-[0_0_8px_rgba(16,185,129,0.4)]" />
+              <span className="h-2 w-2 rounded-full bg-[#4169E1] shadow-[0_0_8px_rgba(16,185,129,0.4)]" />
               Total Activities
             </CardTitle>
-            <div className="mt-2 text-5xl font-bold tracking-tight text-[#50B78B] dark:text-white">
+            <div className="mt-2 text-5xl font-bold tracking-tight text-[#4169E1] dark:text-white">
               {formattedTotal}
             </div>
             <CardDescription className="mt-2 text-sm font-medium">
@@ -208,7 +208,7 @@ export function ActivityLineCard({
             <span
               className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold ${
                 isUp
-                  ? "bg-[#50B78B]/20 text-[#50B78B]"
+                  ? "bg-[#4169E1]/20 text-[#4169E1]"
                   : isDown
                   ? "bg-rose-500/20 text-rose-400"
                   : "bg-zinc-500/20 text-zinc-400"

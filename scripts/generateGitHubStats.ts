@@ -1,6 +1,6 @@
 /**
  * GitHub Stats SVG Generator
- * Generates a styled SVG showing CircuitVerse organization statistics
+ * Generates a styled SVG showing Bude Global Enterprise organization statistics
  *
  * Run: npx tsx scripts/generateGitHubStats.ts
  */
@@ -12,7 +12,7 @@ import path from "path";
    CONFIG
 ------------------------------------------------------- */
 
-const ORG = "CircuitVerse";
+const ORG = "BUDEGlobalEnterprise";
 const GITHUB_API = "https://api.github.com";
 const TOKEN = process.env.GITHUB_TOKEN;
 

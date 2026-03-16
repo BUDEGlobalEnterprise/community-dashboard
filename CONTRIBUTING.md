@@ -1,6 +1,6 @@
-# Contributing to CircuitVerse Community Dashboard
+# Contributing to Bude Global Enterprise Community Dashboard
 
-Thank you for considering contributing to the CircuitVerse Community Dashboard! 🎉
+Thank you for considering contributing to the Bude Global Enterprise Community Dashboard! 🎉
 
 We welcome contributions from everyone, whether you're fixing a bug, improving documentation, or adding a new feature. This guide will help you get started.
 
@@ -49,7 +49,7 @@ cd community-dashboard
 3. Add the upstream remote:
 
 ```bash
-git remote add upstream https://github.com/CircuitVerse/community-dashboard.git
+git remote add upstream https://github.com/BUDEGlobalEnterprise/community-dashboard.git
 ```
 
 ---
@@ -84,7 +84,7 @@ The app will be available at `http://localhost:3000`.
 
 ### Finding Issues
 
-- Browse our [open issues](https://github.com/CircuitVerse/community-dashboard/issues)
+- Browse our [open issues](https://github.com/BUDEGlobalEnterprise/community-dashboard/issues)
 - Look for issues labeled `good first issue` for beginner-friendly tasks
 - Check for issues labeled `help wanted` for priority tasks
 
@@ -267,7 +267,7 @@ npm run lint
 
 ## ❓ Need Help?
 
-- **Slack:** Join the CircuitVerse Slack workspace for real-time discussions
+- **Slack:** Join the Bude Global Enterprise Slack workspace for real-time discussions
 - **GitHub Discussions:** For general questions and ideas
 - **Issues:** For specific problems or feature requests
 
@@ -275,6 +275,6 @@ npm run lint
 
 ## 🙏 Thank You!
 
-Your contributions make CircuitVerse better for everyone. We appreciate your time and effort!
+Your contributions make Bude Global Enterprise better for everyone. We appreciate your time and effort!
 
 Happy Contributing! 🚀

@@ -63,7 +63,7 @@ const Navbar = ({ config }: NavbarProps) => {
                     px-4 py-1.5 text-sm font-medium rounded-full transition-all
                     ${
                       active
-                        ? "bg-[#50B78B]/20 text-[#50B78B] dark:bg-[#50B78B]/30 dark:text-[#50B78B]"
+                        ? "bg-[#4169E1]/20 text-[#4169E1] dark:bg-[#4169E1]/30 dark:text-[#4169E1]"
                         : "text-muted-foreground hover:text-primary"
                     }
                   `}
@@ -82,7 +82,7 @@ const Navbar = ({ config }: NavbarProps) => {
               className={`${actionBtnClass} h-10 w-10 p-0`}
             >
               <a
-                href="https://github.com/CircuitVerse/community-dashboard"
+                href="https://github.com/BUDEGlobalEnterprise/community-dashboard"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -125,7 +125,7 @@ const Navbar = ({ config }: NavbarProps) => {
                   px-3 py-2 rounded-full transition-all
                   ${
                     active
-                      ? "bg-[#50B78B]/20 text-[#50B78B] dark:text-[#50B78B]"
+                      ? "bg-[#4169E1]/20 text-[#4169E1] dark:text-[#4169E1]"
                       : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
                   }
                 `}

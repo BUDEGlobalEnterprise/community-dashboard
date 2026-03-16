@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // fine for now; remove later if you want Next/Image optimizations
     remotePatterns: [
-      { protocol: "https", hostname: "circuitverse.org", pathname: "/**" },
+      { protocol: "https", hostname: "www.budeglobal.in", pathname: "/**" },
       { protocol: "https", hostname: "avatars.githubusercontent.com", pathname: "/**" },
     ],
   },

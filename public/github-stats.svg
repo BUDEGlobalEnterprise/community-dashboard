@@ -64,7 +64,7 @@
     <text x="22" class="section-title">Overall issues and pull requests status</text>
     
     <!-- Centered subtitle -->
-    <text x="265" y="20" class="sub-label-center">On CircuitVerse's repositories</text>
+    <text x="265" y="20" class="sub-label-center">On Bude Global Enterprise's repositories</text>
 
     <!-- Headers -->
     <text x="70" y="48" class="stat-label">Issues</text>

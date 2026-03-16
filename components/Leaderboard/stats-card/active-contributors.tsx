@@ -40,7 +40,7 @@ const ActiveContributors = ({
     count > displayCount ? count - displayCount : 0;
 
   return (
-    <Card className="flex flex-col gap-0 rounded-[20px] border border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900/40 shadow-xl shadow-[#edfff7] dark:shadow-black/50 h-full">
+    <Card className="flex flex-col gap-0 rounded-[20px] border border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900/40 shadow-xl shadow-[#f0f4ff] dark:shadow-black/50 h-full">
       <CardHeader className="flex flex-row items-center justify-between pb-2 px-6">
         <CardTitle className="text-xs uppercase tracking-wider font-medium text-zinc-500 dark:text-zinc-400">
           Contributors
@@ -51,7 +51,7 @@ const ActiveContributors = ({
       <CardContent className="flex flex-1 flex-col justify-between gap-4 p-6 pt-4">
         {/* Count */}
         <div>
-          <div className="text-5xl font-bold text-[#50B78B] dark:text-white tracking-tight">
+          <div className="text-5xl font-bold text-[#4169E1] dark:text-white tracking-tight">
             {count}
           </div>
           <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400 mt-2">

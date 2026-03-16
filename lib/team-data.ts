@@ -1,4 +1,4 @@
-// Team data from CircuitVerse /about page
+// Team data from Bude Global Enterprise /about page
 
 export interface TeamMember {
   username: string;
@@ -9,7 +9,7 @@ export interface TeamMember {
   team_type: 'core' | 'alumni';
 }
 
-// Core team data from CircuitVerse about page
+// Core team data from Bude Global Enterprise about page
 export const coreTeamMembers: TeamMember[] = [
   { username: "tachyons", name: "Aboobacker MK", avatar_url: "https://avatars.githubusercontent.com/u/3112976?s=96&v=4", github_url: "https://github.com/tachyons", role: "Core Team", team_type: "core" },
   { username: "gr455", name: "Ruturaj Mohite", avatar_url: "https://avatars.githubusercontent.com/u/53974118?v=4", github_url: "https://github.com/gr455", role: "Core Team", team_type: "core" },
@@ -28,7 +28,7 @@ export const coreTeamMembers: TeamMember[] = [
   { username: "hardik17771", name: "Hardik Sachdeva", avatar_url: "https://avatars.githubusercontent.com/u/85028179?v=4", github_url: "https://github.com/hardik17771", role: "Core Team", team_type: "core" }
 ];
 
-// Alumni data from CircuitVerse about page
+// Alumni data from Bude Global Enterprise about page
 export const alumniMembers: TeamMember[] = [
   { username: "aayush-05", name: "Aayush Gupta", avatar_url: "https://avatars.githubusercontent.com/u/47032027?v=4", github_url: "https://github.com/aayush-05", role: "Alumni", team_type: "alumni" },
   { username: "ShreyaPrasad1209", name: "Shreya Prasad", avatar_url: "https://avatars.githubusercontent.com/u/43600306?s=96&v=4", github_url: "https://github.com/ShreyaPrasad1209", role: "Alumni", team_type: "alumni" },

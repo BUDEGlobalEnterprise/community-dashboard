@@ -12,15 +12,15 @@ export default function NotFound() {
 
       <div
         aria-hidden="true"
-        className="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#50B78B]/20 blur-3xl"
+        className="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#4169E1]/20 blur-3xl"
       />
 
       <main className="relative z-10 max-w-xl text-center space-y-8">
         <div>
-          <h1 className="text-[9rem] font-extrabold tracking-tight bg-gradient-to-r from-[#50B78B] to-[#70D7AB] bg-clip-text text-transparent">
+          <h1 className="text-[9rem] font-extrabold tracking-tight bg-gradient-to-r from-[#4169E1] to-[#748FFC] bg-clip-text text-transparent">
             404
           </h1>
-          <div className="mx-auto mt-3 h-1 w-24 rounded-full bg-[#50B78B]" />
+          <div className="mx-auto mt-3 h-1 w-24 rounded-full bg-[#4169E1]" />
         </div>
 
         <div className="space-y-3">
@@ -37,7 +37,7 @@ export default function NotFound() {
           <Link
             href="/"
             aria-label="Go to homepage"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#50B78B] px-6 py-3 text-white font-medium transition hover:bg-[#45a97f] focus:outline-none focus:ring-2 focus:ring-[#50B78B]/60"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#4169E1] px-6 py-3 text-white font-medium transition hover:bg-[#3252b0] focus:outline-none focus:ring-2 focus:ring-[#4169E1]/60"
           >
             <Home className="h-5 w-5" />
             Go Home

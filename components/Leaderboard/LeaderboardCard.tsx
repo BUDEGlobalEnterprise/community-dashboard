@@ -34,9 +34,9 @@ const activityStyles: Record<string, {
   },
   "Review submitted": {
     icon: Eye,
-    bgColor: "bg-green-500/10 dark:bg-green-500/15",
-    textColor: "text-green-700 dark:text-green-400",
-    borderColor: "border-l-green-500"
+    bgColor: "bg-sky-500/10 dark:bg-sky-500/15",
+    textColor: "text-sky-700 dark:text-sky-400",
+    borderColor: "border-l-sky-500"
   },
   "Issue labeled": {
     icon: Tag,
@@ -52,9 +52,9 @@ const activityStyles: Record<string, {
   },
   "Issue closed": {
     icon: CheckCircle,
-    bgColor: "bg-emerald-500/10 dark:bg-emerald-500/15",
-    textColor: "text-emerald-700 dark:text-emerald-400",
-    borderColor: "border-l-emerald-500"
+    bgColor: "bg-blue-500/10 dark:bg-blue-500/15",
+    textColor: "text-blue-700 dark:text-blue-400",
+    borderColor: "border-l-blue-500"
   }
 };
 
@@ -144,14 +144,14 @@ export function LeaderboardCard({
   const getRankStyles = (rank: number) => {
     if (rank <= 3) {
       return {
-        border: "border-[#50B78B]/50",
-        iconBg: "bg-[#42B883]/10"
+        border: "border-[#4169E1]/50",
+        iconBg: "bg-[#4169E1]/10"
       };
     }
 
     return {
       border: "",
-      iconBg: "bg-[#42B883]"
+      iconBg: "bg-[#4169E1]"
     };
   };
 
@@ -189,13 +189,13 @@ export function LeaderboardCard({
                   onClick={openGitHubProfile}
                   className="cursor-pointer"
                 >
-                  <Avatar className="w-16 h-16 ring-2 ring-[#42B883]/20 group-hover:ring-[#42B883]/40 transition-all">
+                  <Avatar className="w-16 h-16 ring-2 ring-[#4169E1]/20 group-hover:ring-[#4169E1]/40 transition-all">
                     <AvatarImage
                       src={entry.avatar_url || undefined}
                       alt={entry.name || entry.username}
                       className="object-cover"
                     />
-                    <AvatarFallback className="bg-gradient-to-br from-[#42B883]/20 to-[#42B883]/10 text-[#42B883] font-semibold text-sm">
+                    <AvatarFallback className="bg-gradient-to-br from-[#4169E1]/20 to-[#4169E1]/10 text-[#4169E1] font-semibold text-sm">
                       {(entry.name || entry.username)
                         .substring(0, 2)
                         .toUpperCase()}
@@ -208,7 +208,7 @@ export function LeaderboardCard({
                   "absolute -top-1 -right-1 flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold shadow-md border transition-transform group-hover:scale-110 text-white",
                   isTopThree
                     ? styles.iconBg
-                    : "bg-[#42B883] text-white border-white dark:border-gray-900"
+                    : "bg-[#4169E1] text-white border-white dark:border-gray-900"
                 )}>
                   {rank <= 3 ? getRankIcon(rank) || rank : rank}
                 </div>
@@ -219,12 +219,12 @@ export function LeaderboardCard({
                 <h3 className="font-semibold text-sm truncate mb-1">{entry.name || entry.username}</h3>
                 <p
                   onClick={openGitHubProfile}
-                  className="text-xs text-muted-foreground truncate mb-1 cursor-pointer hover:text-[#50B78B] transition-colors"
+                  className="text-xs text-muted-foreground truncate mb-1 cursor-pointer hover:text-[#4169E1] transition-colors"
                 >
                   @{entry.username}
                 </p>
                 {entry.role && (
-                  <Badge variant="secondary" className="text-xs mb-2 bg-[#42B883]/10 text-[#42B883]">
+                  <Badge variant="secondary" className="text-xs mb-2 bg-[#4169E1]/10 text-[#4169E1]">
                     {entry.role}
                   </Badge>
                 )}
@@ -233,7 +233,7 @@ export function LeaderboardCard({
                 <div className="mb-2">
                   <div className="flex items-center justify-center gap-1 text-sm">
                     <Trophy className="w-3 h-3 text-yellow-500" />
-                    <span className="font-bold text-[#42B883]">{entry.total_points}</span>
+                    <span className="font-bold text-[#4169E1]">{entry.total_points}</span>
                     <span className="text-muted-foreground text-xs">pts</span>
                   </div>
                 </div>
@@ -281,7 +281,7 @@ export function LeaderboardCard({
               {/* Rank */}
               <div className="flex items-center justify-center size-12 shrink-0">
                 {getRankIcon(rank) || (
-                  <span className="text-2xl font-bold text-[#50B78B]">
+                  <span className="text-2xl font-bold text-[#4169E1]">
                     {rank}
                   </span>
                 )}
@@ -292,13 +292,13 @@ export function LeaderboardCard({
                 onClick={openGitHubProfile}
                 className="shrink-0 cursor-pointer"
               >
-                <Avatar className="size-14 hover:ring-2 hover:ring-[#50B78B] transition-all">
+                <Avatar className="size-14 hover:ring-2 hover:ring-[#4169E1] transition-all">
                   <AvatarImage
                     src={entry.avatar_url || undefined}
                     alt={entry.name || entry.username}
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-[#42B883]/20 to-[#42B883]/10 text-[#42B883] font-semibold">
+                  <AvatarFallback className="bg-gradient-to-br from-[#4169E1]/20 to-[#4169E1]/10 text-[#4169E1] font-semibold">
                     {(entry.name || entry.username)
                       .substring(0, 2)
                       .toUpperCase()}
@@ -313,7 +313,7 @@ export function LeaderboardCard({
                     {entry.name || entry.username}
                   </h3>
                   {entry.role && (
-                    <span className="text-xs px-2 py-1 rounded-full bg-[#50B78B]/10 text-[#50B78B]">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[#4169E1]/10 text-[#4169E1]">
                       {entry.role}
                     </span>
                   )}
@@ -321,7 +321,7 @@ export function LeaderboardCard({
 
                 <span
                   onClick={openGitHubProfile}
-                  className="text-sm text-muted-foreground hover:text-[#50B78B] transition-colors cursor-pointer"
+                  className="text-sm text-muted-foreground hover:text-[#4169E1] transition-colors cursor-pointer"
                 >
                   @{entry.username}
                 </span>
@@ -381,7 +381,7 @@ export function LeaderboardCard({
                     )}
                 </div>
                 <div className="text-right">
-                  <div className="text-3xl font-bold text-[#50B78B]">
+                  <div className="text-3xl font-bold text-[#4169E1]">
                     {entry.total_points}
                   </div>
                   <div className="text-xs text-muted-foreground">
@@ -415,7 +415,7 @@ export function LeaderboardCard({
           <div className="flex gap-3 sm:hidden h-full">
             <div className="flex items-start justify-center w-[5%] pt-1">
               {getRankIcon(rank) || (
-                <span className="text-lg font-bold text-[#50B78B]">
+                <span className="text-lg font-bold text-[#4169E1]">
                   {rank}
                 </span>
               )}
@@ -427,13 +427,13 @@ export function LeaderboardCard({
                 onClick={openGitHubProfile}
                 className="cursor-pointer"
               >
-                <Avatar className="size-12 ring-2 ring-[#42B883]/20 group-hover:ring-[#42B883]/40 transition-all">
+                <Avatar className="size-12 ring-2 ring-[#4169E1]/20 group-hover:ring-[#4169E1]/40 transition-all">
                   <AvatarImage
                     src={entry.avatar_url || undefined}
                     alt={entry.name || entry.username}
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-[#42B883]/20 to-[#42B883]/10 text-[#42B883] font-semibold text-sm">
+                  <AvatarFallback className="bg-gradient-to-br from-[#4169E1]/20 to-[#4169E1]/10 text-[#4169E1] font-semibold text-sm">
                     {(entry.name || entry.username)
                       .substring(0, 2)
                       .toUpperCase()}
@@ -446,7 +446,7 @@ export function LeaderboardCard({
                 <h3 className="font-semibold text-sm truncate mb-1 leading-tight">{entry.name || entry.username}</h3>
                 <p
                   onClick={openGitHubProfile}
-                  className="text-xs text-muted-foreground truncate cursor-pointer hover:text-[#50B78B] transition-colors"
+                  className="text-xs text-muted-foreground truncate cursor-pointer hover:text-[#4169E1] transition-colors"
                 >
                   @{entry.username}
                 </p>
@@ -456,14 +456,14 @@ export function LeaderboardCard({
             <div className="flex flex-col gap-2 w-[60%]">
               <div className="flex items-center justify-between">
                 {entry.role && (
-                  <Badge variant="secondary" className="text-xs bg-[#42B883]/10 text-[#42B883]">
+                  <Badge variant="secondary" className="text-xs bg-[#4169E1]/10 text-[#4169E1]">
                     {entry.role}
                   </Badge>
                 )}
                 <div className="text-right">
                   <div className="flex items-center justify-center gap-1 text-sm">
                     <Trophy className="w-3 h-3 text-yellow-500" />
-                    <span className="font-bold text-[#42B883]">{entry.total_points}</span>
+                    <span className="font-bold text-[#4169E1]">{entry.total_points}</span>
                     <span className="text-muted-foreground text-xs">pts</span>
                   </div>
                 </div>
@@ -513,13 +513,13 @@ export function LeaderboardCard({
                 onClick={openGitHubProfile}
                 className="cursor-pointer"
               >
-                <Avatar className="w-16 h-16 ring-2 ring-[#42B883]/20 group-hover:ring-[#42B883]/40 transition-all">
+                <Avatar className="w-16 h-16 ring-2 ring-[#4169E1]/20 group-hover:ring-[#4169E1]/40 transition-all">
                   <AvatarImage
                     src={entry.avatar_url || undefined}
                     alt={entry.name || entry.username}
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-[#42B883]/20 to-[#42B883]/10 text-[#42B883] font-semibold text-sm">
+                  <AvatarFallback className="bg-gradient-to-br from-[#4169E1]/20 to-[#4169E1]/10 text-[#4169E1] font-semibold text-sm">
                     {(entry.name || entry.username)
                       .substring(0, 2)
                       .toUpperCase()}
@@ -532,7 +532,7 @@ export function LeaderboardCard({
                 "absolute -top-1 -right-1 flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold shadow-md border transition-transform group-hover:scale-110 text-white",
                 isTopThree
                   ? styles.iconBg
-                  : "bg-[#42B883] text-white border-white dark:border-gray-900"
+                  : "bg-[#4169E1] text-white border-white dark:border-gray-900"
               )}>
                 {rank <= 3 ? getRankIcon(rank) || rank : rank}
               </div>
@@ -543,12 +543,12 @@ export function LeaderboardCard({
               <h3 className="font-semibold text-sm truncate mb-1">{entry.name || entry.username}</h3>
               <p
                 onClick={openGitHubProfile}
-                className="text-xs text-muted-foreground truncate mb-1 cursor-pointer hover:text-[#50B78B] transition-colors"
+                className="text-xs text-muted-foreground truncate mb-1 cursor-pointer hover:text-[#4169E1] transition-colors"
               >
                 @{entry.username}
               </p>
               {entry.role && (
-                <Badge variant="secondary" className="text-xs mb-2 bg-[#42B883]/10 text-[#42B883]">
+                <Badge variant="secondary" className="text-xs mb-2 bg-[#4169E1]/10 text-[#4169E1]">
                   {entry.role}
                 </Badge>
               )}
@@ -557,7 +557,7 @@ export function LeaderboardCard({
               <div className="mb-2">
                 <div className="flex items-center justify-center gap-1 text-sm">
                   <Trophy className="w-3 h-3 text-yellow-500" />
-                  <span className="font-bold text-[#42B883]">{entry.total_points}</span>
+                  <span className="font-bold text-[#4169E1]">{entry.total_points}</span>
                   <span className="text-muted-foreground text-xs">pts</span>
                 </div>
               </div>

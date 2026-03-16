@@ -147,7 +147,7 @@ export default function HomeDashboard({
         <section className="text-center space-y-6">
           <div className="space-y-4">
             {/* Responsive Text Size */}
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-[#50B78B] via-[#60C79B] to-[#70D7AB] px-2">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-[#4169E1] via-[#5C7CFA] to-[#748FFC] px-2">
               {config.org.name}
             </h1>
             <p className="max-w-2xl mx-auto text-sm sm:text-base text-zinc-600 dark:text-zinc-400 px-4">
@@ -163,7 +163,7 @@ export default function HomeDashboard({
                 className={cn(
                   "flex-1 sm:flex-none px-6 sm:px-8 py-2 rounded-full text-sm font-medium transition-all duration-300 relative z-10",
                   activeTab === "overview"
-                    ? "bg-[#50B78B] text-white shadow-md"
+                    ? "bg-[#4169E1] text-white shadow-md"
                     : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200",
                 )}
               >
@@ -174,7 +174,7 @@ export default function HomeDashboard({
                 className={cn(
                   "flex-1 sm:flex-none px-6 sm:px-8 py-2 rounded-full text-sm font-medium transition-all duration-300 relative z-10",
                   activeTab === "repositories"
-                    ? "bg-[#50B78B] text-white shadow-md"
+                    ? "bg-[#4169E1] text-white shadow-md"
                     : "text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200",
                 )}
               >
@@ -204,12 +204,12 @@ export default function HomeDashboard({
 
               <section className="space-y-6 max-w-5xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#50B78B]">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#4169E1]">
                     Recent Activities
                   </h2>
                   <Link
                     href="/leaderboard"
-                    className="flex items-center gap-2 text-sm font-medium text-[#50B78B] hover:underline"
+                    className="flex items-center gap-2 text-sm font-medium text-[#4169E1] hover:underline"
                   >
                     View Leaderboard <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -278,7 +278,7 @@ export default function HomeDashboard({
                         aria-label="Search repositories"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className="pl-9 w-full bg-white dark:bg-[#07170f] border border-[#50B78B]/60 dark:border-[#50B78B]/40 focus-visible:ring-2 focus-visible:ring-[#50B78B]"
+                        className="pl-9 w-full bg-white dark:bg-[#0a0e1a] border border-[#4169E1]/60 dark:border-[#4169E1]/40 focus-visible:ring-2 focus-visible:ring-[#4169E1]"
                       />
                     </div>
                     {/* Language Filter */}
@@ -286,7 +286,7 @@ export default function HomeDashboard({
                       value={language}
                       onValueChange={setLanguage}
                     >
-                      <SelectTrigger className="w-full sm:w-40 h-9 border border-[#50B78B]/30 hover:bg-[#50B78B]/20 focus-visible:ring-2 focus-visible:ring-[#50B78B]">
+                      <SelectTrigger className="w-full sm:w-40 h-9 border border-[#4169E1]/30 hover:bg-[#4169E1]/20 focus-visible:ring-2 focus-visible:ring-[#4169E1]">
                         <SelectValue placeholder="All Languages" />
                       </SelectTrigger>
                       <SelectContent>
@@ -303,7 +303,7 @@ export default function HomeDashboard({
                       value={sort}
                       onValueChange={setSort}
                     >
-                      <SelectTrigger className="w-full sm:w-44 h-9 border border-[#50B78B]/30 hover:bg-[#50B78B]/20 focus-visible:ring-2 focus-visible:ring-[#50B78B]">
+                      <SelectTrigger className="w-full sm:w-44 h-9 border border-[#4169E1]/30 hover:bg-[#4169E1]/20 focus-visible:ring-2 focus-visible:ring-[#4169E1]">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -324,9 +324,9 @@ export default function HomeDashboard({
                 {sortedRepos.length === 0 ? (
                   <div className="py-16 text-center rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/40 shadow-sm">
                     <div className="relative mx-auto w-20 h-20 mb-6">
-                      <div className="absolute inset-0 rounded-full bg-[#50B78B]/10 dark:bg-[#50B78B]/15" />
-                      <div className="absolute inset-2 rounded-full bg-[#50B78B]/5 dark:bg-[#50B78B]/10 flex items-center justify-center">
-                        <Search className="h-8 w-8 text-[#50B78B]/70" />
+                      <div className="absolute inset-0 rounded-full bg-[#4169E1]/10 dark:bg-[#4169E1]/15" />
+                      <div className="absolute inset-2 rounded-full bg-[#4169E1]/5 dark:bg-[#4169E1]/10 flex items-center justify-center">
+                        <Search className="h-8 w-8 text-[#4169E1]/70" />
                       </div>
                     </div>
                     <h3 className="text-lg font-semibold mb-2">No results found</h3>
@@ -343,7 +343,7 @@ export default function HomeDashboard({
                           setLanguage("__all__");
                           setSort("contributions");
                         }}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[#50B78B]/30 bg-[#50B78B]/10 text-[#50B78B] font-medium hover:bg-[#50B78B]/20 transition-colors"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[#4169E1]/30 bg-[#4169E1]/10 text-[#4169E1] font-medium hover:bg-[#4169E1]/20 transition-colors"
                       >
                         <X className="h-4 w-4" />
                         Clear Filters
@@ -375,7 +375,7 @@ function SummaryCard({
   icon,
 }: SummaryCardProps) {
   return (
-    <div className="flex flex-col h-full rounded-[20px] border border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900/40 shadow-xl shadow-[#edfff7] dark:shadow-black/50 overflow-hidden">
+    <div className="flex flex-col h-full rounded-[20px] border border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900/40 shadow-xl shadow-[#f0f4ff] dark:shadow-black/50 overflow-hidden">
       <div className="flex flex-row items-center justify-between p-6 pb-2">
         <p className="text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
           {label}
@@ -389,7 +389,7 @@ function SummaryCard({
         <div>
           <div
             className={cn(
-              "font-bold tracking-tight text-[#50B78B] dark:text-white",
+              "font-bold tracking-tight text-[#4169E1] dark:text-white",
               String(value).length > 15
                 ? "text-xl sm:text-2xl break-all"
                 : "text-5xl"
@@ -398,7 +398,7 @@ function SummaryCard({
             {value}
           </div>
           {sub && (
-            <p className="text-sm font-medium text-[#50B78B] mt-2">{sub}</p>
+            <p className="text-sm font-medium text-[#4169E1] mt-2">{sub}</p>
           )}
         </div>
       </div>
@@ -408,13 +408,13 @@ function SummaryCard({
 
 function RepoCard({ repo }: { repo: RepoStats }) {
   return (
-    <div className="group flex flex-col h-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-white/10 hover:border-[#50B78B]/30 transition-all duration-300 rounded-[20px] overflow-hidden shadow-xl shadow-[#edfff7] dark:shadow-black/50">
+    <div className="group flex flex-col h-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-white/10 hover:border-[#4169E1]/30 transition-all duration-300 rounded-[20px] overflow-hidden shadow-xl shadow-[#f0f4ff] dark:shadow-black/50">
       {/* Top Section */}
       <div className="p-5 sm:p-6 grow space-y-4">
         <div className="flex items-start justify-between gap-3 sm:gap-4">
           {/* Avatar and Name Wrapper */}
           <div className="flex items-center gap-3 overflow-hidden min-w-0">
-            <div className="shrink-0 group-hover:border-[#50B78B]/30 group-hover:text-[#50B78B] transition-colors rounded-md overflow-hidden border border-zinc-100 dark:border-zinc-800">
+            <div className="shrink-0 group-hover:border-[#4169E1]/30 group-hover:text-[#4169E1] transition-colors rounded-md overflow-hidden border border-zinc-100 dark:border-zinc-800">
               <Image
                 src={repo.avatar_url}
                 alt={repo.name ?? "Image"}
@@ -424,7 +424,7 @@ function RepoCard({ repo }: { repo: RepoStats }) {
             </div>
             {/* Added min-w-0 to allow truncation inside flex */}
             <div className="min-w-0 flex-1">
-              <div className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 hover:text-[#50B78B] dark:hover:text-[#50B78B] transition-colors truncate">
+              <div className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 hover:text-[#4169E1] dark:hover:text-[#4169E1] transition-colors truncate">
                 <Link
                   href={repo.html_url}
                   target="_blank"
@@ -455,7 +455,7 @@ function RepoCard({ repo }: { repo: RepoStats }) {
         <p className="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 leading-relaxed">
           {repo.description?.trim()
             ? repo.description
-            : "A CircuitVerse project repository"}
+            : "A Bude Global Enterprise project repository"}
         </p>
       </div>
 
@@ -517,9 +517,9 @@ function MetricFlowItem({ icon, count, label, variant }: MetricFlowItemProps) {
       bg: "hover:bg-blue-50 dark:hover:bg-blue-900/20",
     },
     success: {
-      icon: "text-[#50B78B]",
-      count: "text-[#50B78B] font-bold",
-      bg: "hover:bg-[#50B78B]/10",
+      icon: "text-[#4169E1]",
+      count: "text-[#4169E1] font-bold",
+      bg: "hover:bg-[#4169E1]/10",
     },
   };
   const styles = variantStyles[variant as keyof typeof variantStyles];
